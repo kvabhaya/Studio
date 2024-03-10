@@ -23,6 +23,10 @@ body::-webkit-scrollbar-thumb{
 .header-outer{
     position: sticky;
     top: 0;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 .navbar-brand img{
     height: 50px;
@@ -54,8 +58,7 @@ body::-webkit-scrollbar-thumb{
     color: white;
 }
 
-/* header area */
-
+/* header area Start*/
 .outer{
     width: 100%;
     height: 500px;
@@ -64,13 +67,292 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: center;
 }
-/* Home-area */
+/* header area End*/
+
+/* Home-area start*/
 .home-outer{
     width: 100%;
     height: 90vh;
-    background-image: url('https://img.freepik.com/free-photo/flat-lay-desk-dark-concept-with-copy-space_23-2148459508.jpg?t=st=1709864664~exp=1709868264~hmac=8d0ff5813f6a1d910a228be4e7cc1a2fa048f0a8b3d4f80252f0a66ecfd1678b&w=740');
+    background-image: url('images/home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-/* Home-area */
+.home-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.title-text{
+    margin: 10px 0;
+}
+.header-text{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 55px;
+}
+.home-widgets-outer{
+    margin-top: -120px;
+}
+.widget-outer{
+    height: 300px;
+    margin-bottom: 20px;
+}
+.widget-inner{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.widget-inner-top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widget-inner-bottom{
+    flex: 1;
+    padding: 10px;
+}
+.widget-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #FE214F;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widget-icon svg{
+    width: 60%;
+    height: 60%;
+}
+.widget-header{
+    text-align: center;
+}
+.widget-desc{
+    text-align: center;
+    color: #34495e;
+}
+/* Home-area end*/
+
+
+/* Service start */
+.service-outer{
+    width: 100%;
+    min-height: 750px;
+    background-image: url('https://images02.nicepage.com/c461c07a441a5d220e8feb1a/24af2a14af16514caf47360a/33581d05cec4a3308cd79979a51eed9d.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+.service-container{
+    height: 750px;
+}
+.row{
+    height: 100%;
+}
+.service-container-inner{
+    height: 100%;
+}
+.service-right-side{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-top{
+    height: 350px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-bottom{
+    height: 350px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+.service-top-title{
+    color: #FE214F;
+}
+.service-top-header{
+    font-weight: 800;
+}
+.service-top-desc{
+    margin-top: 10px;
+}
+.service-grid-outer{
+    width: 100%;
+    height: auto;
+}
+.service-grid-inner{
+    height: 420px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid-1{
+    height: 420px;
+    background-image: url('https://images01.nicepage.com/2c/36/2c363cea606f515e74b1e427f2b437c0.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.grid-3{
+    height: 420px;
+    background-image: url('https://images01.nicepage.com/9b/3f/9b3fb50d7f1060045a2fb67bc06f4802.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.link, .service-grid-title{
+    color: #FE214F;
+}
+.link{
+    font-size: 25px;
+    text-decoration: none;
+}
+.service-grid-header{
+    color: white;
+}
+.service-grid-desc{
+    color: rgb(122, 115, 115);
+}
+/* service-end */
+
+/* product start */
+.product-outer{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-inner-detail{
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-inner-detail-title{
+    color: #FE214F;
+}
+.product-inner-detail-desc{
+    color: #000;
+    font-weight: 600;
+}
+.product-inner-grid-row{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+.grid-wrap-top{
+    height: 250px;
+    width: 20%;
+}
+
+/* product end */
+
+
+/* about-start */
+.about-outer{
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.about-outer img{
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+}
+.dark-shadow-outer{
+    background-color: rgba(19, 15, 64, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-content{
+    width: 600px;
+    height: 80%;
+    border: 1px solid white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-title{
+    color: #FE214F;
+    text-align: center;
+}
+.about-header{
+    color: white;
+    text-align: center;
+}
+/* about-end */
+
+/* contact us start */
+.contact-us-outer{
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+.contact-inner{
+    display: flex;
+    height: 100%;
+}
+.contact-left{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.contact-right{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headeer-title, .address, .contact{
+    color: white;
+    margin:0 0 30px 20px;
+}
+.headeer-title{
+    font-weight: 600;
+}
+.email{
+    color: #FE214F;
+    margin:0 0 0 20px;
+}
+@media only screen and (max-width:992px){
+    .contact-inner{
+        display: block;
+    }
+    .contact-left, .contact-right{
+        height: 500px;
+    }
+    .contact-us-outer{
+        height: 1000px;
+    }
+}
+/* contact us end */
